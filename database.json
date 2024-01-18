@@ -23,6 +23,70 @@
         "question" : "What is 10 + 10 ?",
         "options" : ["10", "20", "30", "0"],
         "answer": "20"
+    },
+    {
+        "question" : "A square field has a side length of 5 meters. What is the perimeter of the field?",
+        "options" : ["10", "20", "30", "15"],
+        "answer": "20"
+    },
+    {
+        "question" : "An apple costs $1.25 and an orange costs $0.75. How much more does the apple cost than the orange?",
+        "options" : ["0.25", "0.5", "1", "1.5"],
+        "answer": "0.5"
+    },
+    {
+        "question" : "A train travels 50 km in 1 hour. How long will it take to travel 200 km?",
+        "options" : ["2", "3", "4", "5"],
+        "answer": "4"
+    },
+    {
+        "question": "There are 24 crayons in a box. If Sarah takes 5 crayons, how many are left?",
+        "options": ["14", "19", "20", "24"],
+        "answer": "19"
+    },
+    {
+        "question": "What is the next number in the sequence: 2, 4, 6, 8, ...?",
+        "options": ["5", "10", "12", "14"],
+        "answer": "10"
+    },
+    {
+        "question": "A rectangle has a length of 8 cm and a width of 5 cm. What is the area of the rectangle?",
+        "options": ["13 cm²", "40 cm²", "50 cm²", "64 cm²"],
+        "answer": "40 cm²"
+    },
+    {
+        "question": "A cake is cut into 6 equal slices. If Sarah eats 2 slices, what fraction of the cake is left?",
+        "options": ["1/3", "1/2", "2/3", "4/6"],
+        "answer": "2/3"
+    },
+    {
+        "question": "Round 387 to the nearest ten.",
+        "options": ["370", "380", "390", "400"],
+        "answer": "390"
+    },
+    {
+        "question": "What is the angle measure of a straight line?",
+        "options": ["30°", "60°", "90°", "180°"],
+        "answer": "180°"
+    },
+    {
+        "question": "There are 12 eggs in a carton. If John breaks 3 eggs, what percentage of the eggs are broken?",
+        "options": ["20%", "25%", "33%", "50%"],
+        "answer": "25%"
+    },
+    {
+        "question": "Which of the following numbers is divisible by 3?",
+        "options": ["17", "24", "31", "52"],
+        "answer": "24"
+    },
+    {
+        "question": "What is the volume of a cube with a side length of 4 cm?",
+        "options": ["16 cm³", "32 cm³", "64 cm³", "128 cm³"],
+        "answer": "64 cm³"
+    },
+    {
+        "question": "If a car travels 80 km in 2 hours, what is its average speed?",
+        "options": ["20 km/h", "40 km/h", "60 km/h", "80 km/h"],
+        "answer": "40 km/h"
     }
-
 ]

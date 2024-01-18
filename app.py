@@ -20,3 +20,5 @@ if __name__ == "__main__":
             print(f"{Fore.GREEN} The questions are loading...")
             spinner(1)
             displayQuestions(database)
+        elif(userInput == "4"):
+            break

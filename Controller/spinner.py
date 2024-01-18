@@ -2,8 +2,9 @@ import time
 import sys
 
 def spinner(duration):
+
     frames = ["-", "/", "|", "\\"]
-    delay = 0.1
+    delay = 0.05
     startTime = time.time()
 
     while time.time() - startTime< duration:
