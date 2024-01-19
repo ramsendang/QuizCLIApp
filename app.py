@@ -6,6 +6,7 @@ init()
 from Controller.menu import menu
 if __name__ == "__main__":
     database = "database.json"
+    scorePath ="score.json"
     displayMenu = menu()
     while True:
         print(f"{Fore.MAGENTA}Welcome to the Quiz Game ! :) ")
@@ -19,6 +20,6 @@ if __name__ == "__main__":
         if(userInput == "1"):
             print(f"{Fore.GREEN} The questions are loading...")
             spinner(1)
-            displayQuestions(database)
+            displayQuestions(database, scorePath)
         elif(userInput == "4"):
             break
