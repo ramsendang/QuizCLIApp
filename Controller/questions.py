@@ -33,8 +33,14 @@ def displayQuestions(database, scorePath):
             option += 1
             i += 1
         console.print(table)
-        #getting the user Answer.
-        answer = int(getUserAnswer())
+        #adding validation to the user input 
+        while True:
+            try:
+                #getting the user Answer.
+                answer = int(getUserAnswer())
+                break
+            except:
+                print(f"Please enter the option for the answer")
         #displaying spinner after each Questions
         spinner(1)
         if(randomQuestions['options'][answer-1] == randomQuestions["answer"]):
