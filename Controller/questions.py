@@ -34,10 +34,10 @@ def displayQuestions(database, scorePath):
             i += 1
         console.print(table)
         #getting the user Answer.
-        answer = getUserAnswer()
+        answer = int(getUserAnswer())
         #displaying spinner after each Questions
         spinner(1)
-        if(answer == randomQuestions["answer"]):
+        if(randomQuestions['options'][answer-1] == randomQuestions["answer"]):
             score += 1
         questionDisplayed += 1
     print(f"Calculationg the score")
