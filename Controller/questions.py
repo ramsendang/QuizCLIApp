@@ -8,11 +8,10 @@ from Controller.spinner import *
 from Controller.scores import saveScore
 init()
 console = Console()
-def displayQuestions(database, scorePath):
-    player = input("Enter your Player Name")
+def displayQuestions(database, scorePath, player):
     questions = readJson(database)
     score = 0
-    numberOfQuestion = 3
+    numberOfQuestion = 5
     questionDisplayed = 0
     while questionDisplayed < numberOfQuestion:
         randomQuestions = random.choice(questions)
@@ -33,18 +32,23 @@ def displayQuestions(database, scorePath):
             option += 1
             i += 1
         console.print(table)
-        #adding validation to the user input 
+        #adding validation to the user input for number
         while True:
             try:
                 #getting the user Answer.
                 answer = int(getUserAnswer())
-                break
+                # adding validation if the user input more then available options 
+                if(answer-1 < 5):
+                    if(randomQuestions['options'][answer-1] == randomQuestions["answer"]):
+                        score += 1
+                    break
+                else:
+                    print(f"Enter Option which is less or equal to 4")
             except:
                 print(f"Please enter the option for the answer")
         #displaying spinner after each Questions
         spinner(1)
-        if(randomQuestions['options'][answer-1] == randomQuestions["answer"]):
-            score += 1
+        
         questionDisplayed += 1
     print(f"Calculationg the score")
     spinner(2)
