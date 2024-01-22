@@ -23,13 +23,16 @@ if __name__ == "__main__":
         # adding logic for showing questions and taking answer 
         if(userInput == "1"):
             print(f"{Fore.CYAN} The questions are loading...")
-            spinner(1)  
+            spinner(1)
+            # displaying the question 
             displayQuestions(database, scorePath, player)
         elif(userInput == "2"):
             print(f"Fetching data from the database")
             spinner(1)
+            # displaying the score 
             showScore(player, scorePath)
         elif(userInput == "3"):
+            # displaying the top player 
             showTopPlayer(scorePath)
         elif(userInput == '4'):
             break

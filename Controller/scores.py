@@ -54,8 +54,12 @@ def showTopPlayer(filePath):
 
         # adding the playerName, score, and date in topPlayer dictionary
         topPlayer[playerName] = {'score': score, 'date': player['date']}
+
+    # sorting the topPlayer dictionary using sorted function  
+    topPlayers = dict(sorted(topPlayer.items(), key=lambda item: item[1]['score'], reverse=True))
+    
     print(f"The top Players are as follows")
     # printing the player with the highest score and their corresponding score
-    for playerName, playerData in topPlayer.items():
+    for playerName, playerData in topPlayers.items():
         print(f"{playerName} scored {playerData['score']} on {playerData['date']}")
 
