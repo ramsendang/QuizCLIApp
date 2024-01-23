@@ -1,7 +1,8 @@
 from Model.json import insertJson
 from Model.json import readJson
 from datetime import datetime
-
+from colorama import Fore, Style, init
+init()
 def saveScore(playerName, score, filePath):
     # creating a date and time string to record the score according to date and time
     date = datetime.now()
@@ -58,8 +59,8 @@ def showTopPlayer(filePath):
     # sorting the topPlayer dictionary using sorted function  
     topPlayers = dict(sorted(topPlayer.items(), key=lambda item: item[1]['score'], reverse=True))
     
-    print(f"The top Players are as follows")
+    print(f"{Fore.GREEN}The top Players are as follows")
     # printing the player with the highest score and their corresponding score
     for playerName, playerData in topPlayers.items():
-        print(f"{playerName} scored {playerData['score']} on {playerData['date']}")
+        print(f"{Fore.YELLOW}{playerName} scored {playerData['score']} on {playerData['date']}")
 
