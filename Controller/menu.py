@@ -1,5 +1,6 @@
 from colorama import Fore, Style, init
 init()
+from Controller.spinner import spinner
 class menu:
     def __init__(self):
         pass
@@ -8,6 +9,8 @@ class menu:
         pass
 
     def showMenu(self):
+            print(f"{Fore.GREEN} Menus are loading ..")
+            spinner(2)
             print(f"{Fore.GREEN} Available Options are :) ")
             print(f"{Fore.YELLOW} 1) Start a Quiz")
             print(f"{Fore.YELLOW} 2) View your score history")
